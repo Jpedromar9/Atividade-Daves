@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Usuários com CEP</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1 id="titulo-pagina">Cadastro de Usuários</h1>
+
+    <!-- Formulário de cadastro -->
+    <form id="form-cadastro">
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" placeholder="Digite seu nome" required>
+
+        <label for="cep">CEP (obrigatório):</label>
+        <input type="text" id="cep" placeholder="Ex: 01001-000" maxlength="9" required>
+
+        <button type="submit" id="btn-cadastrar">Cadastrar</button>
+    </form>
+
+    <p id="status">Status: Aguardando cadastro...</p>
+
+    <!-- Aqui aparece o endereço que veio do ViaCEP -->
+    <div id="endereco" class="escondido"></div>
+
+    <h3>Lista de Usuários:</h3>
+    <ul id="lista-usuarios"></ul>
+
+    <script src="script.js"></script>
+</body>
+</html>

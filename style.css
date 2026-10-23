@@ -1,0 +1,90 @@
+body {
+    font-family: Arial, sans-serif;
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #f4f4f9;
+}
+
+h1 {
+    color: #333;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+input {
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    padding: 10px 15px;
+    font-size: 14px;
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+    background-color: #007bff;
+    color: white;
+    transition: background-color 0.3s;
+}
+
+/* Classe que o JavaScript coloca enquanto busca o CEP */
+button.ativo {
+    background-color: #28a745;
+}
+
+#status {
+    margin-top: 15px;
+    font-weight: bold;
+    color: #555;
+}
+
+/* Caixinha do endereço */
+#endereco {
+    background: #e7f3ff;
+    border: 1px solid #b6d4fe;
+    border-radius: 4px;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+.escondido {
+    display: none;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+li {
+    padding: 10px;
+    background: white;
+    margin-bottom: 5px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+li:hover {
+    background-color: #e9ecef;
+}
+
+/* Botão vermelho de apagar */
+.btn-apagar {
+    background-color: #dc3545;
+    padding: 6px 10px;
+}
+
+.btn-apagar:hover {
+    background-color: #b02a37;
+}
